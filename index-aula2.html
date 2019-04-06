@@ -1,0 +1,121 @@
+<!--Aula #2 HTML 06/04/2019-->
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title> Minha primeira pagina HTMl</title>
+    </head>
+
+    <body>
+        <!--Emmet -> plugin gera os atalhos de digitação-->
+        <h1>Formulário HTML</h1>
+        <hr>
+        
+        <!--form funciona como uma ancora -->
+        <!--action = link para onde vou enviar os dados do form (porde ser um link direto ou um arquivo-->
+        <!--method = comportamento-->
+        <!--Tipos de méthodos: 
+            GET(manda na URL - usado para busca e itens não cofidenciais); 
+            POST(manda no corpo da requisição - usado pra senhas); PUT(atualizar dados); 
+            DELETE
+            OPTIONS (quando quero saber qual dos verbos a rota suporta para que eu possa consumir (API))-->
+        <!--GET e POST são os suportados pelo form-->
+
+        <form action="#" method="GET">
+            <p>
+                <!--input = tag para entrada de dados em formulários-->
+                <!--type = tipo de entrada-->
+                <!--name = atributo-->
+                <label for="Nome">Nome</label>
+                <input type="text" name="Nome">
+            </p>
+
+            <p>
+                <label for="CPF">CPF</label>
+                <input type="text" name="CPF" placeholder="Digite seu cpf aqui" value="018.196.243-82">
+            </p>
+
+            <p>
+                <label for="email">E-mail</label>
+                <input type="email" name="email">
+            </p>
+            
+            <p>
+                <label>Data de nascimento</label>
+                <input type="date" name="d_nascimento">
+            </p>
+
+            <p>
+                <label>Satisfação</label>
+                1<input type="range" name="range" min="1" max="10">10
+            </p>
+
+            <p>
+                <label>Seu website</label>
+                <input type="url" name="site_fav">
+            </p>
+
+            <p>
+                <label for="cor">Sua cor favorita</label>
+                <input type="color" name="cor">
+            </p>
+
+            <p>
+                <label for="genero">Gênero</label>
+                <input type="radio" name="genero" value="M"> Masc.
+                <input type="radio" name="genero" value="F"> Fem.
+            </p>
+
+            <p>
+                <label for="necessidades_especiais">Tem necessidades especiais?</label>
+                <input type="checkbox" name="necessidades_especiais">
+            </p>
+            
+            <p>
+                <label for="series_favoritas">Suas séries favoritas</label>
+                <select name="series_favoritas" multiple> <!--mutiple exibe toda a lista para seleção-->
+                    <option value="Viagem">Viagem ao fundo do poço raso</option>
+                    <option value="acusada">Acusada de morte</option>
+                    <option value="as tranças do"></option>
+                </select>
+            </p>
+
+            <p>
+                <label for="cidade">Sua cidade</label>
+                <select name="sua_cidade" >
+                    <option value="SLZ">SLZ</option>
+                    <option value="ITZ">ITZ</option>
+                    <option value="SSA">SSA</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="sobre">Fale sobre você</label>
+                <textarea name="sobre" placeholder="Fale um pouco sobre você!" cols="30" rows="10"></textarea>
+            </p>
+
+            <p><!---->
+                <label for="arquivo">Anexe sua foto aqui</label>
+                <input type="file" name="foto">
+            </p>
+
+            <p>
+                <ul>
+                    <li>
+                        <a href="table.html">Tabela</a>
+                    </li>
+                </ul>
+            </p>
+
+            <p><!--submit = botão de enviar-->
+                <input type="submit" value="Enviar">
+            </p>
+
+            <p><!--outra forma de fazer o botão de enviar-->
+                <button type="submit">Enviar</button>
+            </p>
+    </body>
+
+
+</html>
